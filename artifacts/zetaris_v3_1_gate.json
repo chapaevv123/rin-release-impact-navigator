@@ -1,0 +1,59 @@
+{
+  "schema": "rin.zetaris_local_source_gate.v1",
+  "observed_at_utc": "2026-10-22T03:54:06Z",
+  "docker_engine": "29.5.3",
+  "docker_ready": true,
+  "containers_healthy": ["zetaris-ui-1", "zetaris-api-1", "zetaris-driver-1", "zetaris-postgres-1"],
+  "available_host_ram_gib": 15.83,
+  "source_files": {
+    "release_changes.csv": {"rows": 2, "sha256": "b9169cb7727196506b688c87512377ee6db0c81143c852f9f140c4ec3681ea68"},
+    "project_usage.csv": {"rows": 1, "sha256": "def9a9e3f395d8dc1bf961fa508300a228e5c674cd18e488a08a2b1c5fdebfa7"}
+  },
+  "driver_visible_same_hashes": true,
+  "sql_endpoint": {
+    "sql": "SELECT 1 AS one LIMIT 10",
+    "http_status": 200,
+    "query_id": "cf552982-3674-43a8-abf2-42b5acbaa1a2",
+    "at_utc": "2026-10-22T03:53:08.680185+00:00",
+    "rows": [["1"]],
+    "row_count": 1,
+    "result_sha256": "e28610836ab702cd35495751839961e9fae54fec4ee18dc4b314862c18c3d104"
+  },
+  "namespace_create": [
+    {"name": "RIN_RELEASE", "http_status": 200, "query_id": "e588b1e3-c881-4469-bdae-0cda2d9d8a5e", "at_utc": "2026-10-22T03:51:14.869046+00:00"},
+    {"name": "RIN_USAGE", "http_status": 200, "query_id": "ea3b1d6f-8072-4f8d-b3a6-36fbd5fa30ce", "at_utc": "2026-10-22T03:51:20.282911+00:00"}
+  ],
+  "namespace_readback": {
+    "sql": "SHOW LIGHTNING DATABASES",
+    "http_status": 200,
+    "query_id": "c8c67f2c-0d79-40ec-a22b-e99e5909f20b",
+    "at_utc": "2026-10-22T03:56:11.297223+00:00",
+    "rin_release_database_id": "805",
+    "rin_usage_database_id": "806",
+    "note": "These are Lightning database IDs, not registered file table IDs."
+  },
+  "file_table_registration": {
+    "status": "BLOCKED",
+    "attempted_table": "RIN_RELEASE.release_changes",
+    "actual_connector_type": null,
+    "registration_ids": [],
+    "attempts": [
+      {"path_form": "absolute shared volume", "http_status": 400, "query_id": "49460a40-0d39-489d-9942-a17154cda1f8", "server_message": "Invalid file path to access"},
+      {"path_form": "absolute org file-store", "http_status": 400, "query_id": "b788f85c-46e8-4b97-af33-92869feb3f14", "server_message": "Invalid file path to access"},
+      {"path_form": "relative org file-store", "http_status": 400, "query_id": "bfd76406-5de4-44b9-9efb-33fd2b0755eb", "server_message": "Invalid file path to access"},
+      {"path_form": "file URI org file-store", "http_status": 400, "query_id": "1f9eb5ae-bdeb-45b6-b41a-1a38ec2ce56d", "server_message": "Invalid file path to access"}
+    ]
+  },
+  "registered_source_query_verified": false,
+  "missing_table_readback": {
+    "sql": "SELECT * FROM RIN_RELEASE.release_changes LIMIT 10",
+    "http_status": 400,
+    "query_id": "7bc0c760-b3f8-4695-8b0c-27b41b1da656",
+    "at_utc": "2026-10-22T03:56:21.325614+00:00",
+    "server_error_code": "TABLE_OR_VIEW_NOT_FOUND"
+  },
+  "cross_source_join_verified": false,
+  "federation_verified": false,
+  "rin_live_zetaris_evidence_consumed": false,
+  "note": "Two derived local CSVs were copied and hash-checked but not registered. Zetaris's official File System upload workflow may be required. No live source JOIN or RIN verdict linkage is claimed."
+}

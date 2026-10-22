@@ -1,0 +1,15 @@
+# RIN approved-design walkthrough — 110 seconds
+
+Local URL: `http://127.0.0.1:8000/ui/`. Use the **002 Real Starlette regression** case at 1920×1080 and 100% browser zoom. V3.9 keeps the approved V3.8 visual design and adds working navigation. The screen is a replay of saved evidence; opening a sponsor card sends no new SQL or model request. Record English narration with the browser window only.
+
+For the V3.9 navigation take, use this exact route sequence within the same 110 seconds: **Investigation** (0–43 s), **Replays** (43–70 s; open Zetaris and Meterless), **Hypotheses** (70–91 s; show SUPPORTED/REFUTED/UNRESOLVED, then open NVIDIA on Replays), **Evidence** (91–110 s; open one source receipt and download JSON). Home and Releases remain available for a separate optional demonstration; do not sacrifice the causal explanation to visit every route in the main video. Browser Back/Forward works, and the selected case persists.
+
+| Time | Exact owner action | English narration |
+|---|---|---|
+| 0–17 s | Show the hero, globe and prominent REVIEW. | “HTTPX 0.28 removed the deprecated app argument. Did that update reach Starlette’s TestClient? RIN follows the evidence before recommending review.” |
+| 17–43 s | Select RELEASE, API, USE SITE, then BEHAVIOR on the Impact Canvas. Pause on the Evidence Inspector; show actual lines 392 and 430, open the behavior receipt, and close with Escape. | “The release note points to httpx.Client. Starlette’s testclient.py inherits that client at line 392 and passes app at line 430. In an isolated local comparison, HTTPX 0.27.2 passed and 0.28.0 raised TypeError. These are source and runtime receipts, not a universal application claim.” |
+| 43–70 s | Open **Replays** in the top navigation. Open the Zetaris receipt, close with Escape, then open Meterless. | “A previously executed Zetaris SQL JOIN across two registered local CSV sources returned the cited use site. This is its saved query receipt. Meterless recorded the linked graph and recommended a target CI check. Both are displayed in replay.” |
+| 70–91 s | Open **Hypotheses**; select the REFUTED and UNRESOLVED records, then return to **Replays** and open NVIDIA. | “A real hosted Nemotron call returned HTTP 200 and 516 tokens. Its cited proposal remains a hypothesis; the deterministic evidence decides REVIEW. Competing claims and unresolved paths remain visible.” |
+| 91–110 s | Open **Evidence**; open a source receipt and close it with Escape, then click Download evidence JSON. | “REVIEW applies to this narrow TestClient constructor case. Unsupported cases stay UNKNOWN. Every included receipt is available for verification and replay.” |
+
+The HTTPX 0.27.2 pin is a local reproduction input, not Starlette’s upstream manifest. Zetaris does not prove heterogeneous remote federation; Meterless is an in-memory reference. Cursor development evidence is linked on the page, while original Cursor Usage screenshots are still unavailable locally. The frozen benchmark is 0/12 evaluated. A playable narrated MP4 has not been recorded yet.

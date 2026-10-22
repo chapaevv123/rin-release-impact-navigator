@@ -1,0 +1,46 @@
+{
+  "source": "genuine local Chrome/CDP interaction captures",
+  "url": "http://127.0.0.1:8000/ui/",
+  "viewport": "1920x1080",
+  "mode": "saved replay; no external sponsor requests",
+  "animations": [
+    {
+      "file": "docs/media/investigation_canvas.gif",
+      "states": [
+        "selected release; Evidence Inspector updated",
+        "selected api; Evidence Inspector updated",
+        "selected use; Evidence Inspector updated",
+        "selected runtime; Evidence Inspector updated",
+        "selected decision; Evidence Inspector updated"
+      ],
+      "frames": 5,
+      "duration_ms_per_frame": 1100,
+      "bytes": 271414,
+      "sha256": "f1773ab75168e20154f2232a8be2951d05fe0cbefeaee6577597acac92c24e84"
+    },
+    {
+      "file": "docs/media/hypothesis_ledger.gif",
+      "states": [
+        "selected recorded SUPPORTED hypothesis",
+        "selected recorded REFUTED hypothesis",
+        "selected recorded UNRESOLVED hypothesis"
+      ],
+      "frames": 3,
+      "duration_ms_per_frame": 1500,
+      "bytes": 128928,
+      "sha256": "64ff98d80c4aadd38aa57efb2eeed6c07e1f3a751247a7e9dfab5560ffa535cb"
+    },
+    {
+      "file": "docs/media/sponsor_replays.gif",
+      "states": [
+        "Zetaris saved SQL JOIN receipt dialog",
+        "Meterless saved graph receipt dialog",
+        "NVIDIA saved hypothesis receipt dialog"
+      ],
+      "frames": 3,
+      "duration_ms_per_frame": 1700,
+      "bytes": 276569,
+      "sha256": "91f2f7601c23bc851ece03cbda868ac41ea03f41e8d19e3607c09520cbad08d4"
+    }
+  ]
+}

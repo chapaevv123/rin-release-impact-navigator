@@ -1,0 +1,7 @@
+# Cursor Agent development evidence
+
+On 2026-10-22 the owner reported a real Cursor Agent task in this local RIN repository, reviewed the changes in Cursor, and reported included Usage moving from **2% to 22%**. The owner reported screenshots of both Usage views and no confirmed paid expense. The screenshots were not attached to this workspace; no chat ID or exact session time is available. Those account details are **owner-attested**, not independently read from Cursor.
+
+The local code result is independently inspectable: Cursor changed `src/rin/core.py` to add `INSUFFICIENT_TEST_COVERAGE` before Skeptic snapshots its challenge list, and added `test_static_absence_does_not_claim_no_action` in `tests/test_core.py`. Independent execution of `python -m unittest discover -s tests -v` returned **15 PASS, 0 FAIL**. The new test confirms `UNKNOWN`, a visible coverage challenge, and a verified bundle when static usage is absent even though the fixture claims complete source/transitive coverage. The verifier still rejects `NO_ACTION`. The real Starlette bundle still verifies with six receipts and replays with `matched=true`.
+
+The reviewed code and test were committed locally as `e1cde63f4f24140d043ea1dcb43701d6f0c7b01e`; Cursor itself did not commit or publish. For a stronger submission audit, retain the original Usage screenshots and Cursor task/chat ID if available. Do not invent either. No public submission or account action is authorized by this evidence.

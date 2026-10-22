@@ -1,0 +1,10 @@
+{
+  "mode": "PREPARED_ONLY_NOT_REGISTERED",
+  "source_bundle_evidence_sha256": "dfcd3c9c85794eb4e1a8bf764e77ac2a062ca43bc3997f06a54e3854e0be043f",
+  "release_rows": 2,
+  "usage_rows": 1,
+  "files_sha256": {
+    "release_changes.csv": "b9169cb7727196506b688c87512377ee6db0c81143c852f9f140c4ec3681ea68",
+    "project_usage.csv": "def9a9e3f395d8dc1bf961fa508300a228e5c674cd18e488a08a2b1c5fdebfa7"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schema": "rin.nemotron_inference.v1",
+  "status": "HTTP_200_INFERENCE",
+  "at_utc": "2026-10-22T09:40:56.521444+00:00",
+  "endpoint": "https://integrate.api.nvidia.com/v1/chat/completions",
+  "model_requested": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "route_classification": "NVIDIA_HOSTED_PROTOTYPE_FREE_ENDPOINT",
+  "account_gate_source": "Owner supplied distinct NVIDIA Build key path; official NVIDIA Build Free Endpoint model page and Developer Program docs",
+  "account_quota_visible_to_api": false,
+  "paid_overage_account_setting_verified": false,
+  "paid_route_selected": false,
+  "billing_change_performed": false,
+  "max_tokens": 384,
+  "reasoning_budget": 32,
+  "timeout_seconds": 25,
+  "automatic_retries": 0,
+  "input_sha256": "2dd5d42efc0f20cd810b171e0a58b311f84994cddf7757e1142a5576a8369752",
+  "input_shape": "two pinned source spans + bounded runtime context",
+  "source_receipt_ids": [
+    "rcpt_7d73f32d894c8906",
+    "rcpt_23376650016e1aa3"
+  ],
+  "key_value": "REDACTED",
+  "http_status": 200,
+  "response_model_id": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "response_id": "chatcmpl-e6915443-cb1c-4e31-9152-aba5b424ea4d",
+  "response_text": "{\n  \"hypothesis_id\": \"model_candidate_001\",\n  \"changed_symbol\": \"httpx.Client\",\n  \"proposed_impact\": \"The removal of the deprecated `app` argument from httpx.Client causes a TypeError when constructing the client with the `app=self.app` pattern, breaking compatibility with Starlette 0.36.3 TestClient.\",\n  \"source_receipt_ids\": [\"rcpt_7d73f32d894c8906\", \"rcpt_23376650016e1aa3\"],\n  \"exact_source_spans\": [\"The deprecated `app` argument has now been removed.\", \"app=self.app,\"],\n  \"uncertainty\": \"This is a selected constructor behavior, not a universal project impact.\",\n  \"required_verification\": \"Confirm whether the project's httpx.Client instantiation relies on the removed `app` argument.\",\n  \"model_id\": \"nvidia/nemotron-3.5-lightning-30b-a3b\"\n}",
+  "response_sha256": "94cb28e1e0f93dc4e9f985b9c6588d30f14514fc7c540d8524a7130d4fab8c72",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 285,
+    "completion_tokens": 231,
+    "total_tokens": 516,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": null
+    }
+  },
+  "schema_valid": true,
+  "citation_validation": {
+    "state": "HYPOTHESIS",
+    "reason": "CITED_PROPOSAL_REQUIRES_VERIFICATION",
+    "proposal": {
+      "hypothesis_id": "model_candidate_001",
+      "changed_symbol": "httpx.Client",
+      "proposed_impact": "The removal of the deprecated `app` argument from httpx.Client causes a TypeError when constructing the client with the `app=self.app` pattern, breaking compatibility with Starlette 0.36.3 TestClient.",
+      "source_receipt_ids": [
+        "rcpt_7d73f32d894c8906",
+        "rcpt_23376650016e1aa3"
+      ],
+      "exact_source_spans": [
+        "The deprecated `app` argument has now been removed.",
+        "app=self.app,"
+      ],
+      "uncertainty": "This is a selected constructor behavior, not a universal project impact.",
+      "required_verification": "Confirm whether the project's httpx.Client instantiation relies on the removed `app` argument.",
+      "model_id": "nvidia/nemotron-3.5-lightning-30b-a3b"
+    },
+    "deterministic_verdict": "REVIEW",
+    "source_query_id": "e124e490-4b55-4f1c-9436-7e80e7869f63",
+    "skeptic_challenges": [
+      "INSUFFICIENT_TEST_COVERAGE",
+      "KWARGS_FLOW_UNRESOLVED",
+      "TRANSITIVE_PATH_UNVERIFIED"
+    ]
+  },
+  "rin_model_stage": "HYPOTHESIS",
+  "deterministic_verdict": "REVIEW",
+  "receipt_sha256": "8b6457f77df9421c975433466f2767d0cccfee3fb5c8aa8a832e4e9614db6abb"
+}

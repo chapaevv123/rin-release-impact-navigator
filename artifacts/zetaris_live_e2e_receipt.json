@@ -1,0 +1,66 @@
+{
+  "schema": "rin.zetaris_meterless_live_e2e.v1",
+  "captured_at_utc": "2026-10-22T04:37:11.513859+00:00",
+  "source_capture_sha256": "25a5034de11031400cf824eba317f7f606f696289a270a8c59c34dfe3b46f2eb",
+  "source_query_id": "e124e490-4b55-4f1c-9436-7e80e7869f63",
+  "bundle_evidence_sha256": "dfcd3c9c85794eb4e1a8bf764e77ac2a062ca43bc3997f06a54e3854e0be043f",
+  "decision": {
+    "verdict": "REVIEW",
+    "reason": "LIVE_SOURCE_JOIN_AND_DIFFERENTIAL_REVIEW",
+    "source_validation": {
+      "verdict": "REVIEW",
+      "reason": "LIVE_REGISTERED_SOURCE_JOIN_VERIFIED",
+      "matched_rows": 1,
+      "join_query_id": "e124e490-4b55-4f1c-9436-7e80e7869f63",
+      "join_result_sha256": "8b91496e5665ec665cb1919691529676ac6494e79b717b8430758a9f566c8500"
+    },
+    "graph_used": true,
+    "hypothesis_update": {
+      "hypothesis_id": "hyp_001",
+      "event": "LIVE_JOIN_CORROBORATED",
+      "state_remains": "SUPPORTED",
+      "query_id": "e124e490-4b55-4f1c-9436-7e80e7869f63"
+    },
+    "next_action": "REVIEW_FAILED_DIFFERENTIAL_IN_TARGET_CI"
+  },
+  "meterless_graph": {
+    "model": "Meterless World Model reference 0.1.0",
+    "releaseId": "release:pypi:httpx-0.28.0",
+    "projectId": "project:rin:Starlette 0.36.3 TestClient (real public repository)",
+    "graphFindings": [
+      {
+        "symbol": "httpx.Client",
+        "usageCount": 1,
+        "evidenceIds": [
+          "rcpt_7d73f32d894c8906",
+          "rcpt_23376650016e1aa3",
+          "rcpt_524b11ae5c343ff8",
+          "zetaris:query:e124e490-4b55-4f1c-9436-7e80e7869f63"
+        ]
+      }
+    ],
+    "nextAction": "REVIEW_FAILED_DIFFERENTIAL_IN_TARGET_CI",
+    "readAfterWrite": true,
+    "sourceJoinQueryId": "e124e490-4b55-4f1c-9436-7e80e7869f63",
+    "sourceJoinResultSha256": "8b91496e5665ec665cb1919691529676ac6494e79b717b8430758a9f566c8500",
+    "sourceMode": "REGISTERED_LOCAL_CSV_JOIN",
+    "hypothesisBefore": [
+      {
+        "id": "hyp_001",
+        "state": "SUPPORTED"
+      },
+      {
+        "id": "hyp_002",
+        "state": "REFUTED"
+      },
+      {
+        "id": "hyp_002_dynamic",
+        "state": "UNRESOLVED"
+      }
+    ],
+    "verdictConstraint": "REVIEW_OR_UNKNOWN",
+    "at": "2026-10-22T04:37:11.498Z"
+  },
+  "graph_output_sha256": "3f3070003e77d3e8eeb42c1c5c010ceceaff2cb7af19cc20137d63bcc830a5cc",
+  "scope": "two registered local CSV sources; in-memory Meterless reference graph; no heterogeneous remote federation"
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "python3 bench/build_static_demo.py",
+  "outputDirectory": "public_demo"
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "rin.development_eval.v1",
+  "frozen_benchmark_evaluated": 0,
+  "frozen_benchmark_total": 12,
+  "cases": [
+    {
+      "id": "starlette_httpx_real_public",
+      "kind": "REAL_PUBLIC_LOCAL_REPRODUCTION",
+      "verdict": "REVIEW",
+      "receipt_valid": true,
+      "replay_matched": true,
+      "hypotheses_refuted": 1,
+      "hypotheses_unresolved": 1
+    },
+    {
+      "id": "flask_upload_fixture",
+      "kind": "SYNTHETIC_PROJECT",
+      "verdict": "REVIEW",
+      "receipt_valid": true
+    },
+    {
+      "id": "missing_release",
+      "kind": "FAILURE_INJECTION",
+      "verdict": "UNKNOWN",
+      "typed_reason": [
+        "SOURCE_UNAVAILABLE"
+      ],
+      "receipt_valid": true
+    }
+  ],
+  "adversarial_checks": {
+    "tampered_receipt_rejected": true,
+    "forged_no_action_rejected": true,
+    "false_no_action_observed": 0
+  }
+}

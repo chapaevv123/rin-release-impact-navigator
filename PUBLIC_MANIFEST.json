@@ -1,0 +1,438 @@
+{
+  "schema": "rin.public_release.v4",
+  "source_git_head": "ddcca53af9efcbe6500b47c2d9141adad43ae513",
+  "mode": "LOCAL_PUBLICATION_CANDIDATE_NOT_PUBLISHED",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 32,
+      "sha256": "23302dd90b8bb74b44d365fafef8df20f809b61cb347023951ecf60a88a29651"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 739,
+      "sha256": "26367a6ec37e7088ac86420c4f60ed9e185181a492fde05ba8a1445f32693702"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "bytes": 2952,
+      "sha256": "73b638bedf91a9790f0fa39cbb43e75e15938ca86ea8db3c3bac4fa9974d9860"
+    },
+    {
+      "path": "DEVLOG.md",
+      "bytes": 7804,
+      "sha256": "342dbeb81fb455b801721abe62195f70f9cd5b7d1f46f975ebb58e17da691697"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1073,
+      "sha256": "67140d991c50d5497b562832a77bbad458a9bf2affbc85c5dc6cfb17fba812e5"
+    },
+    {
+      "path": "LIMITATIONS.md",
+      "bytes": 1887,
+      "sha256": "bb73e3ecdac3de60820144d977bc6fc8eba0d3f827a60715986b9abdf08c20d3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11561,
+      "sha256": "5cfefa30880b5e9753d72576790199bdb08f9e9fca4b8a9c5b2575099c379fc0"
+    },
+    {
+      "path": "SPONSOR_TECH.md",
+      "bytes": 4167,
+      "sha256": "a6dec7fef03bf893500f0603a0feac5b30ac845bf8a69a22ab2d1a7499842cfc"
+    },
+    {
+      "path": "artifacts/development_eval.json",
+      "bytes": 859,
+      "sha256": "f32a6c2b5b346cd91eb12f016adbf3c30ccefce02d05ba206a62e98528ead10f"
+    },
+    {
+      "path": "artifacts/flask_3_1_e2e_bundle.json",
+      "bytes": 80325,
+      "sha256": "d60ca8e935e1e2f91690d8d404632854e5115a198a42cd4d8c199ac9335d4caf"
+    },
+    {
+      "path": "artifacts/meterless_real_case_receipt.json",
+      "bytes": 2045,
+      "sha256": "a9fa99ddd07f0c4de76d483da1b8354da656966c316432e392ca261f8d04153a"
+    },
+    {
+      "path": "artifacts/nemotron_owner_key_inference_receipt.json",
+      "bytes": 3928,
+      "sha256": "9142cbc27eec4bb9d2ea837c62192489e1fe05bfb4cc8846f4a41ef7173382a3"
+    },
+    {
+      "path": "artifacts/nemotron_v3_4_inference_receipt.json",
+      "bytes": 1156,
+      "sha256": "fb8ca57ff12a536093cbe5e523c0c856aa516e9d2c14ce8de01181ee5c7df0e6"
+    },
+    {
+      "path": "artifacts/screenshots/v3_9_1920_investigation.png",
+      "bytes": 696828,
+      "sha256": "1aade40f8c1f0e0b7975d3aeddf138e5c31e09a67c068e7dbbe5490b719dd5d7"
+    },
+    {
+      "path": "artifacts/starlette_httpx_028_bundle.json",
+      "bytes": 97276,
+      "sha256": "98c4e4d2eb1a0d8a4e652d0571ca48af4fc4c7333ea28ec3ba68659915582d8d"
+    },
+    {
+      "path": "artifacts/zetaris_live_e2e_receipt.json",
+      "bytes": 2486,
+      "sha256": "748f1d1f02794756f9027f9b223a82bf207e74a05d875b1f5b3ad088174dc30e"
+    },
+    {
+      "path": "artifacts/zetaris_live_join_receipt.json",
+      "bytes": 10919,
+      "sha256": "633ca33600cc6f6175527fad49c592a12e167b7e0d44fcb37b80a21cde849cbd"
+    },
+    {
+      "path": "artifacts/zetaris_v3_1_gate.json",
+      "bytes": 3101,
+      "sha256": "adade3d646930bfb21059b7129f3fa957e53f3ca3d5427084eec70fdbfc69d14"
+    },
+    {
+      "path": "bench/assess_nemotron_proposal.py",
+      "bytes": 1368,
+      "sha256": "ee1afcfe0a27fa0cbfb5a3aee73c4187df99088397da9cc0bc46fcd2392d0246"
+    },
+    {
+      "path": "bench/build_public_release.py",
+      "bytes": 6530,
+      "sha256": "ddfa9025ac3b2b8823e44c786d754e8d4ed7bcf7910ca577909afc76ecc73f15"
+    },
+    {
+      "path": "bench/build_static_demo.py",
+      "bytes": 4275,
+      "sha256": "2359357df0e5a97cd3a29b084cbe3fd7d14a1851cdd334bb891a761034f34856"
+    },
+    {
+      "path": "bench/capture_showcase_gifs.py",
+      "bytes": 8649,
+      "sha256": "7c315a6d49582096cd145b71f3f1ca30a985cf0c4b1858c19bf2911f4b59d50a"
+    },
+    {
+      "path": "bench/capture_zetaris_live_e2e.py",
+      "bytes": 5768,
+      "sha256": "7c716a76fb0bdc5fb8aec767c4ed29e73479e0136a91f7523bc0c017649eb391"
+    },
+    {
+      "path": "bench/check_package_links.py",
+      "bytes": 914,
+      "sha256": "75c9abd7ceb828c2732f2d9591b3cf17ab361518260c094960e26f11a7f572e1"
+    },
+    {
+      "path": "bench/evaluate_development.py",
+      "bytes": 3060,
+      "sha256": "25932841cd791e06762369a3331e982e4db8e552c03a4b7ca36e080daba83770"
+    },
+    {
+      "path": "docs/CURSOR_AGENT_EVIDENCE.md",
+      "bytes": 1476,
+      "sha256": "678f1090296989ec25787068e785447740d878d1903772edd25846a883b26491"
+    },
+    {
+      "path": "docs/DEMO_SCRIPT.md",
+      "bytes": 3105,
+      "sha256": "d38c3cfca86f84eaa93e59f0107953ad83393c17faa4f2e017639effce278221"
+    },
+    {
+      "path": "docs/GITHUB_PRESENTATION.md",
+      "bytes": 998,
+      "sha256": "24180d82f39d0f6711fcd870439dfce703e8205435afc7fba3240868ea8edba8"
+    },
+    {
+      "path": "docs/HOSTING.md",
+      "bytes": 3244,
+      "sha256": "8f0f10307bb2fcedf59b95f9242cab9361601bb7a642222efba5e3ba2cb996fb"
+    },
+    {
+      "path": "docs/NEMOTRON_STATUS.md",
+      "bytes": 2481,
+      "sha256": "bf2c72f2648e2536435eaf01a95a3dcb5b7adf4a64c39a45a9d0b2d1e8e98b0b"
+    },
+    {
+      "path": "docs/PROVENANCE.md",
+      "bytes": 1514,
+      "sha256": "813111c511ad56d48ea0ad7bec91c9891bdab75e0303b87ed2c6898b24996b36"
+    },
+    {
+      "path": "docs/RELEASE_NOTES_V4.md",
+      "bytes": 1783,
+      "sha256": "1adc9aa7061537326e3d0359bdccd4e98b7aa601cdaa8a9273be2bc2f5de74af"
+    },
+    {
+      "path": "docs/RIN_JUDGE_SLIDES.pdf",
+      "bytes": 643653,
+      "sha256": "ac2afccb6c009f7a58eeb04eeec6703269f401c8f1ea9a825bb71bfa482ba144"
+    },
+    {
+      "path": "docs/ZETARIS_SOURCE_PLAN.md",
+      "bytes": 3280,
+      "sha256": "c04a02c01da506dabbcdb350fb6c060ccafcf07f314890ce186981f4f5f8f167"
+    },
+    {
+      "path": "docs/design/RIN_APPROVED_DESIGN.png",
+      "bytes": 1838583,
+      "sha256": "225c9db53d3477f78dd7761f838140f9387da1b86cada58e32c10ecd63204efd"
+    },
+    {
+      "path": "docs/media/hypothesis_ledger.gif",
+      "bytes": 128928,
+      "sha256": "64ff98d80c4aadd38aa57efb2eeed6c07e1f3a751247a7e9dfab5560ffa535cb"
+    },
+    {
+      "path": "docs/media/investigation_canvas.gif",
+      "bytes": 271414,
+      "sha256": "f1773ab75168e20154f2232a8be2951d05fe0cbefeaee6577597acac92c24e84"
+    },
+    {
+      "path": "docs/media/showcase_capture_manifest.json",
+      "bytes": 1576,
+      "sha256": "887117d4434026fdb9f26ec446d1b24ba6ebfc8ebbe8f61ccd900dc73a093158"
+    },
+    {
+      "path": "docs/media/sponsor_replays.gif",
+      "bytes": 276569,
+      "sha256": "91f2f7601c23bc851ece03cbda868ac41ea03f41e8d19e3607c09520cbad08d4"
+    },
+    {
+      "path": "meterless_graph.ts",
+      "bytes": 3908,
+      "sha256": "03a81777c7e1aaa8cc27d3ca228c3704c6c958b4a6b99729adaa74a52f3f5673"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 366,
+      "sha256": "3cd196c068ceef3872c118db3a08599356aeb35a6f02f1cf42d7d5a5a734d146"
+    },
+    {
+      "path": "rin.py",
+      "bytes": 246,
+      "sha256": "1e8843d51e2de8f663f6223970a52e726efd092cec4c11e13047ff3198f5efec"
+    },
+    {
+      "path": "samples/FLASK_LICENSE.txt",
+      "bytes": 1475,
+      "sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea"
+    },
+    {
+      "path": "samples/flask_3_1_case.json",
+      "bytes": 618,
+      "sha256": "2ff7848a9728a6625e7ccc5a9c83378be1b8130a3fe9d079e936176c5db89220"
+    },
+    {
+      "path": "samples/flask_changes_snapshot.txt",
+      "bytes": 70710,
+      "sha256": "ed2c9f275a6237c7cf3ef0c689d06def8bd0f118e345a41a1145907feeaa88a7"
+    },
+    {
+      "path": "samples/real_starlette/HTTPX_LICENSE.md",
+      "bytes": 1520,
+      "sha256": "eb237e056a490d1f290e4dfa3cc342a04c64a89701385f86a847cdbe4d21957d"
+    },
+    {
+      "path": "samples/real_starlette/STARLETTE_LICENSE.md",
+      "bytes": 1545,
+      "sha256": "38184b047d9c147baaa1b78de5ccbddb838965582493f1d83f7846242c7d4682"
+    },
+    {
+      "path": "samples/real_starlette/case.json",
+      "bytes": 1044,
+      "sha256": "4913125a74bf0a866e90e644f86640f298dfe96e7aa1791a4dc1f0743e2511ce"
+    },
+    {
+      "path": "samples/real_starlette/httpx_changelog.md",
+      "bytes": 52745,
+      "sha256": "0aaaa998d2a0b1b67555480ea367d266d10a114b6ce34e90b68865c082e4bbf3"
+    },
+    {
+      "path": "samples/real_starlette/requirements.txt",
+      "bytes": 103,
+      "sha256": "0c876a1123c72da2c3e0058686df2f677e9a5d9b662c53be91231bc26f3ec52c"
+    },
+    {
+      "path": "samples/real_starlette/runtime_new.json",
+      "bytes": 231,
+      "sha256": "87afa525d9a67c8ad26b3491564736a75a51ed8129bbcf7c590ccfffd15efbe1"
+    },
+    {
+      "path": "samples/real_starlette/runtime_old.json",
+      "bytes": 168,
+      "sha256": "9f575e17fd17cfbcf238e82ac50bcb5420955f9f9b19f2438ab628ec2ef5c75c"
+    },
+    {
+      "path": "samples/real_starlette/starlette_pyproject.toml",
+      "bytes": 3330,
+      "sha256": "ef341d0fbb1497a8b4ca8ec09340aec658057119754bd4ce9727e6e7b0f9c446"
+    },
+    {
+      "path": "samples/real_starlette/testclient.py",
+      "bytes": 29345,
+      "sha256": "4ad9cf0a44243a5d82e3becfe19d8aad4d7ac5f7298fb35a6ba6273b940dffe8"
+    },
+    {
+      "path": "samples/requirements.txt",
+      "bytes": 13,
+      "sha256": "9c07c4225d35a82b6fb42f873d02ac383b4ac4e0aac95b536a56deac8610dfad"
+    },
+    {
+      "path": "samples/upload_service.py",
+      "bytes": 172,
+      "sha256": "cfeedd231a0b73c74aa7936ad6598c26b32ff2baca361db1ae53b256a9d91e16"
+    },
+    {
+      "path": "samples/zetaris_sources/manifest.json",
+      "bytes": 410,
+      "sha256": "dcb1e2fc0fbb1144e5152e037f3d4e80fcace4d711aab5f494f6031c93ac4270"
+    },
+    {
+      "path": "samples/zetaris_sources/project_usage.csv",
+      "bytes": 84,
+      "sha256": "def9a9e3f395d8dc1bf961fa508300a228e5c674cd18e488a08a2b1c5fdebfa7"
+    },
+    {
+      "path": "samples/zetaris_sources/release_changes.csv",
+      "bytes": 134,
+      "sha256": "b9169cb7727196506b688c87512377ee6db0c81143c852f9f140c4ec3681ea68"
+    },
+    {
+      "path": "src/rin/__init__.py",
+      "bytes": 68,
+      "sha256": "ee9662a0dddce76365ef94b46d14452368b44ddadb9355792200e980f1c50c5a"
+    },
+    {
+      "path": "src/rin/cli.py",
+      "bytes": 2142,
+      "sha256": "8ce387e0780b95a5a32c0f5f8134a1c4516e1a7aa6556304948420d640c37c2d"
+    },
+    {
+      "path": "src/rin/core.py",
+      "bytes": 22210,
+      "sha256": "cbe9c22307d866289b239b7d1359be973c88004888abad039a1bed38f74f7a72"
+    },
+    {
+      "path": "src/rin/e2e.py",
+      "bytes": 5488,
+      "sha256": "ee6465ca6ec4087fbe1426d8f9f1ba7bfdff274319ae7d5eb7649f4d33be4773"
+    },
+    {
+      "path": "src/rin/nemotron_optional.py",
+      "bytes": 3778,
+      "sha256": "5fc31a6f998d2e5cb9e68edbcd7ee3fc8a6c4535887fdddadf5bd25ae470560c"
+    },
+    {
+      "path": "src/rin/nvidia_client.py",
+      "bytes": 4284,
+      "sha256": "8abf70d340ffe70416f87430d819cf928614da5f3f73206ec5e81989ad0fde93"
+    },
+    {
+      "path": "src/rin/zetaris_bridge.py",
+      "bytes": 3969,
+      "sha256": "0726feba29abdfd152a4b69fce9d715a32f4121d1970d4b3ccc487d9be7e27f5"
+    },
+    {
+      "path": "src/rin/zetaris_live.py",
+      "bytes": 5433,
+      "sha256": "cbd75a6215d715858ba555519e620dbc0d5fc5e990e520b9786451358d685c15"
+    },
+    {
+      "path": "src/rin/zetaris_sources.py",
+      "bytes": 5461,
+      "sha256": "82c5d63993951c14c68144e2d965afd57ee29e5062bebcec4a64327fa7705d83"
+    },
+    {
+      "path": "tests/test_core.py",
+      "bytes": 10605,
+      "sha256": "25c34333b79027520bc826794df0b0a5012c60bce212c552a402ea396ceb2a93"
+    },
+    {
+      "path": "tests/test_nemotron_optional.py",
+      "bytes": 4486,
+      "sha256": "ef3cab147890f059fa55b994acb841a6c0cfc4437bc3d2c142a83d14446db38a"
+    },
+    {
+      "path": "tests/test_nvidia_client.py",
+      "bytes": 2764,
+      "sha256": "1ba2af6fca359b749e6d506cccdbfd036b5096dd8feb3e7109cdb92459d40928"
+    },
+    {
+      "path": "tests/test_zetaris_live.py",
+      "bytes": 2148,
+      "sha256": "b6137529685a75120f4f0e61577241fefce22c9c082e74f5716445abf49b522d"
+    },
+    {
+      "path": "tests/test_zetaris_sources.py",
+      "bytes": 2477,
+      "sha256": "ffc81ce9c8d0362a1b33af967727c8208f605820ad12e849fdf40a47c35d5dc9"
+    },
+    {
+      "path": "ui/app.js",
+      "bytes": 33086,
+      "sha256": "be85ec85ef1ee0d64d60ac83b606119184060bce56e7563c9c8f8f141d19f81d"
+    },
+    {
+      "path": "ui/index.html",
+      "bytes": 13689,
+      "sha256": "85b632720c48bb76baae5e483d5da017ab99703cfa04efa01fa87e8374405f57"
+    },
+    {
+      "path": "ui/v3_7.css",
+      "bytes": 19164,
+      "sha256": "559376e1458bfe0245a1ecc71e05d5e249a5b351e2b7a26fb8e8434c810410e1"
+    },
+    {
+      "path": "ui/v3_8.css",
+      "bytes": 14137,
+      "sha256": "a34706bff3e73a8b3023d3ea7916690b87aeb829d6b394bc37d7cc32696e680a"
+    },
+    {
+      "path": "ui/v3_9.css",
+      "bytes": 6121,
+      "sha256": "1f29b9cbe6c1858855020f7e2710355c329c85e67e0d0b59a5004bd9aac2cb97"
+    },
+    {
+      "path": "vendor/meterless-world-model/LICENSE",
+      "bytes": 11540,
+      "sha256": "22e1a763fde324e6ebde189d4cc1c0e9090f00f205504e97345edaafd4c12e73"
+    },
+    {
+      "path": "vendor/meterless-world-model/src/index.ts",
+      "bytes": 20281,
+      "sha256": "cf7699c757751ef3b99dbfdece0f5c930a13039687b93bc3107c16e404cfba65"
+    },
+    {
+      "path": "vendor/meterless-world-model/src/ingest.ts",
+      "bytes": 8106,
+      "sha256": "f47ab4a0d130f554c026ab6e9e1760519455fdfdfce17d03fd869ba788b32401"
+    },
+    {
+      "path": "vendor/meterless-world-model/src/resolve.ts",
+      "bytes": 2322,
+      "sha256": "6f00b917bf5dcd844004c68fe51cd45894631ab93498cdf1c1752ba4961eb1d8"
+    },
+    {
+      "path": "vendor/meterless-world-model/src/stableIds.ts",
+      "bytes": 8089,
+      "sha256": "69dc5c54eb7f0b435ffcc076c16bca4391e135561c6a7f2f4b2cdca516a4d0eb"
+    },
+    {
+      "path": "vendor/meterless-world-model/src/store.ts",
+      "bytes": 6636,
+      "sha256": "7c9ee5b682065f6441d3f16da2737f369fd72cb1f244e8c36c0b7d9e4ecc0c5c"
+    },
+    {
+      "path": "vendor/meterless-world-model/src/types.ts",
+      "bytes": 9018,
+      "sha256": "fac1cdebaf74ee98ec81f07dcc3b110b9cdebbe55585887f233e5c0d104990aa"
+    },
+    {
+      "path": "vercel.json",
+      "bytes": 170,
+      "sha256": "c8e5ad6f8b028ece8cb286b5ed964efb265d2e26e67a4b5bd42a5c1cc5931a2d"
+    }
+  ],
+  "excluded": "credentials, .env, internal logs, old QA profiles and obsolete screenshots"
+}

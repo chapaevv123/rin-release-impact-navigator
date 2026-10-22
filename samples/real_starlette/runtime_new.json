@@ -1,0 +1,1 @@
+{"dependency": "httpx", "dependency_version": "0.28.0", "exception_message": "Client.__init__() got an unexpected keyword argument 'app'", "exception_type": "TypeError", "httpx": "0.28.0", "outcome": "FAIL", "starlette": "0.36.3"}

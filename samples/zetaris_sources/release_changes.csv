@@ -1,0 +1,3 @@
+symbol,release_receipt_id,release_version
+httpx.Client,rcpt_7d73f32d894c8906,0.28.0
+httpx.Client.proxies,rcpt_7d73f32d894c8906,0.28.0

@@ -1,0 +1,21 @@
+{
+  "project": "Synthetic upload service fixture",
+  "dependency": "flask",
+  "old_version": "3.0.3",
+  "new_version": "3.1.0",
+  "manifest_path": "requirements.txt",
+  "release_notes": {
+    "path": "flask_changes_snapshot.txt",
+    "url": "https://raw.githubusercontent.com/pallets/flask/3.1.0/CHANGES.rst"
+  },
+  "changes": [
+    {
+      "symbol": "flask.Request.max_content_length",
+      "release_span": "Request.max_content_length"
+    }
+  ],
+  "python_files": ["upload_service.py"],
+  "complete_project_snapshot": false,
+  "transitive_paths_verified": false,
+  "mode": "PUBLIC_RELEASE_PLUS_SYNTHETIC_PROJECT"
+}

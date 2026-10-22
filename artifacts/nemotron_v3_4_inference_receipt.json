@@ -1,0 +1,27 @@
+{
+  "schema": "rin.nemotron_inference.v1",
+  "status": "HTTP_ERROR",
+  "at_utc": "2026-10-22T09:05:48.166642+00:00",
+  "endpoint": "https://integrate.api.nvidia.com/v1/chat/completions",
+  "model_requested": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "account_gate_source": "Owner statement in active RIN V3.4 request plus NVIDIA official model and Developer Program documentation",
+  "account_quota_visible_to_api": false,
+  "paid_overage_account_setting_verified": false,
+  "route_classification": "NVIDIA_HOSTED_PROTOTYPE_FREE_ENDPOINT",
+  "max_tokens": 384,
+  "reasoning_budget": 32,
+  "timeout_seconds": 25,
+  "automatic_retries": 0,
+  "input_sha256": "2dd5d42efc0f20cd810b171e0a58b311f84994cddf7757e1142a5576a8369752",
+  "input_shape": "two pinned source spans + bounded runtime context",
+  "source_receipt_ids": [
+    "rcpt_7d73f32d894c8906",
+    "rcpt_23376650016e1aa3"
+  ],
+  "key_value": "REDACTED",
+  "http_status": 401,
+  "reason": "MODEL_REQUEST_REJECTED",
+  "rin_model_stage": "UNKNOWN",
+  "deterministic_verdict": "UNKNOWN",
+  "receipt_sha256": "b7e50240487a0a23adec2e31de62bd821b0a498dcfab3a09c37e8a29724db847"
+}

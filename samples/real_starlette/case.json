@@ -1,0 +1,23 @@
+{
+  "project": "Starlette 0.36.3 TestClient (real public repository)",
+  "project_commit": "be4f3e110ed1172ec9cb47a6209bd899a0d3a604",
+  "dependency": "httpx",
+  "old_version": "0.27.2",
+  "new_version": "0.28.0",
+  "manifest_path": "requirements.txt",
+  "manifest_provenance": "LOCAL_REPRODUCTION_PIN_NOT_UPSTREAM_MANIFEST",
+  "upstream_manifest_path": "starlette_pyproject.toml",
+  "release_notes": {
+    "path": "httpx_changelog.md",
+    "url": "https://github.com/encode/httpx/blob/80960fa31918d7663c3f4c3ad61661cf0e80628f/CHANGELOG.md"
+  },
+  "changes": [
+    {"symbol": "httpx.Client", "release_span": "The deprecated `app` argument has now been removed."},
+    {"symbol": "httpx.Client.proxies", "release_span": "The deprecated `proxies` argument has now been removed."}
+  ],
+  "python_files": ["testclient.py"],
+  "differential_reports": {"old": "runtime_old.json", "new": "runtime_new.json"},
+  "complete_project_snapshot": false,
+  "transitive_paths_verified": false,
+  "mode": "RECORDED_REAL_PUBLIC_SOURCES_LOCAL_REPRODUCTION_PIN"
+}

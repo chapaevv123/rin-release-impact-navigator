@@ -1,0 +1,73 @@
+{
+  "schema": "rin.meterless_real_case.v1",
+  "captured_at_utc": "2026-10-22T03:34:21.446062+00:00",
+  "case_input_hash_sha256": "4913125a74bf0a866e90e644f86640f298dfe96e7aa1791a4dc1f0743e2511ce",
+  "case_evidence_hash_sha256": "dfcd3c9c85794eb4e1a8bf764e77ac2a062ca43bc3997f06a54e3854e0be043f",
+  "hypothesis_before": [
+    {
+      "id": "hyp_001",
+      "state": "SUPPORTED"
+    },
+    {
+      "id": "hyp_002",
+      "state": "REFUTED"
+    },
+    {
+      "id": "hyp_002_dynamic",
+      "state": "UNRESOLVED"
+    }
+  ],
+  "world_model": "Meterless World Model reference 0.1.0",
+  "storage": "memory",
+  "read_after_write": true,
+  "graph_findings": [
+    {
+      "symbol": "httpx.Client",
+      "usageCount": 1,
+      "evidenceIds": [
+        "rcpt_7d73f32d894c8906",
+        "rcpt_23376650016e1aa3",
+        "rcpt_524b11ae5c343ff8"
+      ]
+    }
+  ],
+  "next_action": "REVIEW_FAILED_DIFFERENTIAL_IN_TARGET_CI",
+  "verdict_constraint": "REVIEW_OR_UNKNOWN",
+  "case_verdict_unchanged": "REVIEW",
+  "graph_output": {
+    "model": "Meterless World Model reference 0.1.0",
+    "releaseId": "release:pypi:httpx-0.28.0",
+    "projectId": "project:rin:Starlette 0.36.3 TestClient (real public repository)",
+    "graphFindings": [
+      {
+        "symbol": "httpx.Client",
+        "usageCount": 1,
+        "evidenceIds": [
+          "rcpt_7d73f32d894c8906",
+          "rcpt_23376650016e1aa3",
+          "rcpt_524b11ae5c343ff8"
+        ]
+      }
+    ],
+    "nextAction": "REVIEW_FAILED_DIFFERENTIAL_IN_TARGET_CI",
+    "readAfterWrite": true,
+    "hypothesisBefore": [
+      {
+        "id": "hyp_001",
+        "state": "SUPPORTED"
+      },
+      {
+        "id": "hyp_002",
+        "state": "REFUTED"
+      },
+      {
+        "id": "hyp_002_dynamic",
+        "state": "UNRESOLVED"
+      }
+    ],
+    "verdictConstraint": "REVIEW_OR_UNKNOWN",
+    "at": "2026-10-22T03:34:21.435Z"
+  },
+  "graph_output_sha256": "27887eda0cb1fbd2d68493a172f25ec673244b07cff295379588d10d558ecad6",
+  "scope": "local reference graph; no Zetaris or Nemotron call in this run"
+}

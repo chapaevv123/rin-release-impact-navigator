@@ -1,0 +1,2 @@
+# Local differential reproduction baseline. This is NOT Starlette's repository manifest.
+httpx==0.27.2

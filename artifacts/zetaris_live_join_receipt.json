@@ -1,0 +1,388 @@
+{
+  "schema": "rin.zetaris_registered_csv_join.v1",
+  "captured_at_utc": "2026-10-22T04:37:08.445136+00:00",
+  "bundle_evidence_sha256": "dfcd3c9c85794eb4e1a8bf764e77ac2a062ca43bc3997f06a54e3854e0be043f",
+  "connector_scope": "two owner-registered local NDP File System CSV sources; no heterogeneous remote federation",
+  "database_ids": {
+    "RIN_RELEASE": "805",
+    "RIN_USAGE": "806"
+  },
+  "namespace_query": {
+    "result": "SQL_PROBE",
+    "http_status": 200,
+    "query_id": "2e070805-fa07-403d-968d-06e073159356",
+    "sql": "SHOW LIGHTNING DATABASES",
+    "response_bytes": 208,
+    "top_keys": [
+      "headers",
+      "data",
+      "total",
+      "timeUsed"
+    ],
+    "headers": [
+      "name",
+      "description",
+      "id"
+    ],
+    "rows": [
+      [
+        "NY_TAXI",
+        "NY Taxi sample data",
+        "6"
+      ],
+      [
+        "RIN_RELEASE",
+        "",
+        "805"
+      ],
+      [
+        "RIN_USAGE",
+        "",
+        "806"
+      ],
+      [
+        "TPCDS_DB",
+        "TPC-DS benchmark sample data",
+        "307"
+      ]
+    ],
+    "server_message": null,
+    "error_http_status": null,
+    "at_utc": "2026-10-22T04:37:04.501819+00:00",
+    "result_sha256": "855ab2ca766301fd9c99a50853fbe784425cd592dbf3503e3fa4f12e1c803ed9"
+  },
+  "sources": {
+    "RIN_RELEASE.release_changes": {
+      "source_id": "RIN_RELEASE.release_changes",
+      "prepared_csv": "release_changes.csv",
+      "prepared_sha256": "b9169cb7727196506b688c87512377ee6db0c81143c852f9f140c4ec3681ea68",
+      "expected_row_count": 2,
+      "matched": true,
+      "listing": {
+        "result": "SQL_PROBE",
+        "http_status": 200,
+        "query_id": "50df4c66-57cd-40ac-afe7-858373ad6897",
+        "sql": "SHOW TABLES IN RIN_RELEASE",
+        "response_bytes": 162,
+        "top_keys": [
+          "headers",
+          "data",
+          "total",
+          "timeUsed"
+        ],
+        "headers": [
+          "table_identifier",
+          "catalog_name",
+          "catalog_type"
+        ],
+        "rows": [
+          [
+            "RIN_RELEASE.release_changes",
+            "RIN_RELEASE",
+            "Lightning Database"
+          ]
+        ],
+        "server_message": null,
+        "error_http_status": null,
+        "at_utc": "2026-10-22T04:37:04.817258+00:00",
+        "result_sha256": "c1759934b677a3a0037549b9991a851aa4fd08d301466a6c948160d02ede8a78"
+      },
+      "schema": {
+        "result": "SQL_PROBE",
+        "http_status": 200,
+        "query_id": "46ac5a0f-80fb-4c48-98db-7f2f9fb8af76",
+        "sql": "DESCRIBE RIN_RELEASE.release_changes",
+        "response_bytes": 175,
+        "top_keys": [
+          "headers",
+          "data",
+          "total",
+          "timeUsed"
+        ],
+        "headers": [
+          "col_name",
+          "data_type",
+          "comment"
+        ],
+        "rows": [
+          [
+            "symbol",
+            "string",
+            null
+          ],
+          [
+            "release_receipt_id",
+            "string",
+            null
+          ],
+          [
+            "release_version",
+            "string",
+            null
+          ]
+        ],
+        "server_message": null,
+        "error_http_status": null,
+        "at_utc": "2026-10-22T04:37:05.192744+00:00",
+        "result_sha256": "91026e74cff08e20187d70364ea901d579a8a9478a2912f9c6fb6e6b5a09bc93"
+      },
+      "select": {
+        "result": "SQL_PROBE",
+        "http_status": 200,
+        "query_id": "b38194fe-4634-437c-8dee-8b31daa051d8",
+        "sql": "SELECT * FROM RIN_RELEASE.release_changes LIMIT 10",
+        "response_bytes": 202,
+        "top_keys": [
+          "headers",
+          "data",
+          "total",
+          "timeUsed"
+        ],
+        "headers": [
+          "symbol",
+          "release_receipt_id",
+          "release_version"
+        ],
+        "rows": [
+          [
+            "httpx.Client",
+            "rcpt_7d73f32d894c8906",
+            "0.28.0"
+          ],
+          [
+            "httpx.Client.proxies",
+            "rcpt_7d73f32d894c8906",
+            "0.28.0"
+          ]
+        ],
+        "server_message": null,
+        "error_http_status": null,
+        "at_utc": "2026-10-22T04:37:05.591367+00:00",
+        "result_sha256": "c592c76f53f83adca318be637c867bfc4280bbca023e15dbc26b44038638867d"
+      },
+      "count": {
+        "result": "SQL_PROBE",
+        "http_status": 200,
+        "query_id": "064b7ffe-e444-4e10-9ac7-fe186d1d210d",
+        "sql": "SELECT COUNT(*) AS n FROM RIN_RELEASE.release_changes LIMIT 10",
+        "response_bytes": 57,
+        "top_keys": [
+          "headers",
+          "data",
+          "total",
+          "timeUsed"
+        ],
+        "headers": [
+          "n"
+        ],
+        "rows": [
+          [
+            "2"
+          ]
+        ],
+        "server_message": null,
+        "error_http_status": null,
+        "at_utc": "2026-10-22T04:37:06.017730+00:00",
+        "result_sha256": "72cb573c0f06ed22eef9d55a3a5e5b118322555ae843675245337139e103506a"
+      }
+    },
+    "RIN_USAGE.project_usage": {
+      "source_id": "RIN_USAGE.project_usage",
+      "prepared_csv": "project_usage.csv",
+      "prepared_sha256": "def9a9e3f395d8dc1bf961fa508300a228e5c674cd18e488a08a2b1c5fdebfa7",
+      "expected_row_count": 1,
+      "matched": true,
+      "listing": {
+        "result": "SQL_PROBE",
+        "http_status": 200,
+        "query_id": "5561bf6d-deae-4b79-a202-cc1a3d4fdc6e",
+        "sql": "SHOW TABLES IN RIN_USAGE",
+        "response_bytes": 156,
+        "top_keys": [
+          "headers",
+          "data",
+          "total",
+          "timeUsed"
+        ],
+        "headers": [
+          "table_identifier",
+          "catalog_name",
+          "catalog_type"
+        ],
+        "rows": [
+          [
+            "RIN_USAGE.project_usage",
+            "RIN_USAGE",
+            "Lightning Database"
+          ]
+        ],
+        "server_message": null,
+        "error_http_status": null,
+        "at_utc": "2026-10-22T04:37:06.347475+00:00",
+        "result_sha256": "b5ae9213d1e79a292ef7dd189c21fdcadafabe8f36e5851baa1a9318a3ea2929"
+      },
+      "schema": {
+        "result": "SQL_PROBE",
+        "http_status": 200,
+        "query_id": "c45b67d6-6f8a-4d6f-898f-bde1c6a65c81",
+        "sql": "DESCRIBE RIN_USAGE.project_usage",
+        "response_bytes": 164,
+        "top_keys": [
+          "headers",
+          "data",
+          "total",
+          "timeUsed"
+        ],
+        "headers": [
+          "col_name",
+          "data_type",
+          "comment"
+        ],
+        "rows": [
+          [
+            "symbol",
+            "string",
+            null
+          ],
+          [
+            "path",
+            "string",
+            null
+          ],
+          [
+            "project_receipt_id",
+            "string",
+            null
+          ]
+        ],
+        "server_message": null,
+        "error_http_status": null,
+        "at_utc": "2026-10-22T04:37:06.665390+00:00",
+        "result_sha256": "03c24142afaf2af734a83131841bee84f98518b45ae51b60f4bb3d62cae3dcba"
+      },
+      "select": {
+        "result": "SQL_PROBE",
+        "http_status": 200,
+        "query_id": "d5b2261d-1fed-4950-8157-a75d375cc7ef",
+        "sql": "SELECT * FROM RIN_USAGE.project_usage LIMIT 10",
+        "response_bytes": 144,
+        "top_keys": [
+          "headers",
+          "data",
+          "total",
+          "timeUsed"
+        ],
+        "headers": [
+          "symbol",
+          "path",
+          "project_receipt_id"
+        ],
+        "rows": [
+          [
+            "httpx.Client",
+            "testclient.py:392",
+            "rcpt_23376650016e1aa3"
+          ]
+        ],
+        "server_message": null,
+        "error_http_status": null,
+        "at_utc": "2026-10-22T04:37:07.042369+00:00",
+        "result_sha256": "8a1a0b86cb4d3b33f8772150a99d997506cb50d9f3b0dbfd6fb3bfaaf07b4533"
+      },
+      "count": {
+        "result": "SQL_PROBE",
+        "http_status": 200,
+        "query_id": "4ea87567-9744-490a-be8e-8b5aaaf895c9",
+        "sql": "SELECT COUNT(*) AS n FROM RIN_USAGE.project_usage LIMIT 10",
+        "response_bytes": 57,
+        "top_keys": [
+          "headers",
+          "data",
+          "total",
+          "timeUsed"
+        ],
+        "headers": [
+          "n"
+        ],
+        "rows": [
+          [
+            "1"
+          ]
+        ],
+        "server_message": null,
+        "error_http_status": null,
+        "at_utc": "2026-10-22T04:37:07.471600+00:00",
+        "result_sha256": "e28610836ab702cd35495751839961e9fae54fec4ee18dc4b314862c18c3d104"
+      }
+    }
+  },
+  "join": {
+    "result": "SQL_PROBE",
+    "http_status": 200,
+    "query_id": "e124e490-4b55-4f1c-9436-7e80e7869f63",
+    "sql": "SELECT r.symbol, u.path, r.release_receipt_id, u.project_receipt_id FROM RIN_RELEASE.release_changes r JOIN RIN_USAGE.project_usage u ON r.symbol = u.symbol LIMIT 10",
+    "response_bytes": 190,
+    "top_keys": [
+      "headers",
+      "data",
+      "total",
+      "timeUsed"
+    ],
+    "headers": [
+      "symbol",
+      "path",
+      "release_receipt_id",
+      "project_receipt_id"
+    ],
+    "rows": [
+      [
+        "httpx.Client",
+        "testclient.py:392",
+        "rcpt_7d73f32d894c8906",
+        "rcpt_23376650016e1aa3"
+      ]
+    ],
+    "server_message": null,
+    "error_http_status": null,
+    "at_utc": "2026-10-22T04:37:07.962524+00:00",
+    "result_sha256": "8b91496e5665ec665cb1919691529676ac6494e79b717b8430758a9f566c8500",
+    "release_table": "RIN_RELEASE.release_changes",
+    "usage_table": "RIN_USAGE.project_usage",
+    "source_ids": [
+      "RIN_RELEASE.release_changes",
+      "RIN_USAGE.project_usage"
+    ]
+  },
+  "join_count": {
+    "result": "SQL_PROBE",
+    "http_status": 200,
+    "query_id": "257f6e03-3951-4707-b9fc-f407a139dad4",
+    "sql": "SELECT COUNT(*) AS n FROM RIN_RELEASE.release_changes r JOIN RIN_USAGE.project_usage u ON r.symbol = u.symbol LIMIT 10",
+    "response_bytes": 57,
+    "top_keys": [
+      "headers",
+      "data",
+      "total",
+      "timeUsed"
+    ],
+    "headers": [
+      "n"
+    ],
+    "rows": [
+      [
+        "1"
+      ]
+    ],
+    "server_message": null,
+    "error_http_status": null,
+    "at_utc": "2026-10-22T04:37:08.445136+00:00",
+    "result_sha256": "e28610836ab702cd35495751839961e9fae54fec4ee18dc4b314862c18c3d104"
+  },
+  "source_validation": {
+    "verdict": "REVIEW",
+    "reason": "REGISTERED_SOURCE_JOIN_MATCHED_VERIFIED_USAGE",
+    "matched_rows": 1
+  },
+  "status": "CROSS_SOURCE_JOIN_VERIFIED",
+  "capture_sha256": "25a5034de11031400cf824eba317f7f606f696289a270a8c59c34dfe3b46f2eb"
+}
