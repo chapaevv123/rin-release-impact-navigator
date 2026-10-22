@@ -1,6 +1,6 @@
 # Static replay demo: deployment preparation
 
-RIN's public demo can be served as static HTML, CSS, JavaScript and saved JSON. It makes **no live NVIDIA, Zetaris or Meterless request**. Do not publish it until the owner approves a public repository and deployment.
+RIN's demo is served as static HTML, CSS, JavaScript and saved JSON. It makes **no live NVIDIA, Zetaris or Meterless request**. The source repository is public; deployment of this static demo still requires owner approval.
 
 ## Build the exact static output
 
@@ -17,7 +17,17 @@ Do not serve the whole source repository as the hosted site. The UI's relative `
 
 ## Vercel, after explicit publication approval
 
-The checked-in `vercel.json` sets `buildCommand` to `python3 bench/build_static_demo.py` and `outputDirectory` to `public_demo`. Vercel's [build settings](https://vercel.com/docs/builds/configure-a-build) support a custom build command and output directory; only output files are served. Use the repository root as the project root and the **Other** framework preset. No environment variables are required. Connecting a Git repository or using the Vercel CLI can create a deployment, so both remain approval-gated. Vercel cloud execution has **not** been tested; the local static output and browser behavior have been tested.
+The Vercel project must use these settings:
+
+| Setting | Value |
+| --- | --- |
+| Root Directory | `.` (repository root; do not use `ui`) |
+| Framework Preset | `Other` |
+| Build Command | `python3 bench/build_static_demo.py` |
+| Output Directory | `public_demo` |
+| Install Command | Empty / disabled; no install step is needed |
+
+The root contains `vercel.json` and the allowlist build script. With `ui` as Root Directory, Vercel cannot access `../artifacts/`, `bench/build_static_demo.py` or the root `vercel.json`; the relative evidence requests would fail. The checked-in config sets the Build Command and Output Directory above. Vercel serves only the output directory. No environment variables are required. Vercel cloud execution has **not** been tested; local build and browser behavior have been tested. Changing project settings and triggering a deployment remain approval-gated. See Vercel's [build settings](https://vercel.com/docs/builds/configure-a-build).
 
 Alternatively, after approval, publish only the `public_demo/` contents through a dedicated GitHub Pages source or a manually triggered Pages workflow. [GitHub Pages publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) describes the branch and Actions options. This repository intentionally contains no push-triggered deployment workflow.
 
